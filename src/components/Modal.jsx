@@ -25,7 +25,7 @@ export default function BasicModal() {
 
   return (
     <div>
-      <Button onClick={handleOpen} variant="contained" color='secondary'>Open modal</Button>
+      <Button onClick={handleOpen} variant="contained" color='secondary'>Abrir modal</Button>
       
       <Modal
         open={open}

@@ -6,13 +6,13 @@ const columns = [
   { field: 'id', headerName: 'ID', width: 20 },
   {
     field: 'firstName',
-    headerName: 'First name',
+    headerName: 'Nombre',
     width: 100,
     editable: true,
   },
   {
     field: 'lastName',
-    headerName: 'Last name',
+    headerName: 'Apellido',
     width: 100,
     editable: true,
   },
@@ -32,13 +32,13 @@ const columns = [
   },
   {
     field: 'genre',
-    headerName: 'Genre',
+    headerName: 'Género',
     width: 90,
     editable: true,
   },
   {
     field: 'registration_date',
-    headerName: 'Registration Date',
+    headerName: 'Fecha de registro',
     width: 150,
     editable: true,
   }
@@ -51,7 +51,7 @@ const rows = [
     lastName: 'mar',
  
     stack: 'Front-end',
-    genre:'Female',
+    genre:'Femenino',
     registration_date: '2/3/23'
 
  },
@@ -61,7 +61,7 @@ const rows = [
     lastName: 'lol',
 
     stack: 'Front-end',
-    genre:'Male',
+    genre:'Masculino',
     registration_date:  '2/3/23'
 
  },
@@ -70,7 +70,7 @@ const rows = [
     firstName: 'All',
     lastName: 'mar',
     stack: 'Back-end',
-    genre:'Male',
+    genre:'Masculino',
     registration_date:  '2/3/23'
 
  },
