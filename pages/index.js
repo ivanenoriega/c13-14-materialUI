@@ -1,38 +1,38 @@
 import * as React from "react";
-import { Typography, Button, TextField, Box, Paper, Grid } from "@mui/material";
+import {
+  Typography,
+  Button,
+  TextField,
+  Box,
+  Paper,
+  Grid,
+  Container,
+} from "@mui/material";
+import SelectStyle from "../src/components/Select";
+import RadioButton from "../src/components/RadioButton";
+import CheckBox from "../src/components/CheckBox";
+import BasicModal from "../src/components/Modal.jsx";
+//import BasicModal from "../src/components/Modal";
 
 const Home = () => {
   return (
-    <Box sx={{ maxWidth: 500 }}>
+    <Box sx={{ maxWidth: 800 }}>
       <Paper
         elevation={1}
         sx={{ p: "32px", display: "flex", flexDirection: "column", gap: 3 }}
       >
-        <Typography sx={{ fontWeight: 500, fontSize: 24 }}>
-          Inscreva-se em nossa newsletter
-        </Typography>
-
-        <Grid item xs={12}>
-          <TextField
-            id="outlined-basic"
-            label="Nome"
-            variant="outlined"
-            sx={{ width: 1 }}
-          />
-        </Grid>
-
-        <Grid item xs={12}>
-          <TextField
-            id="outlined-basic"
-            label="Email"
-            variant="outlined"
-            sx={{ width: 1 }}
-          />
-        </Grid>
-
-        <Button variant="contained" sx={{ width: 1 }}>
-          Inscreva-se
-        </Button>
+        <SelectStyle />
+        <RadioButton />
+        <CheckBox />
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-around",
+          }}
+        >
+          <BasicModal />
+        </Box>
       </Paper>
     </Box>
   );
