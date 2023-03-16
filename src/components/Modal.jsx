@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
-import GridData from './Grid';
+import GridData from './Table';
 
 const style = {
   position: 'absolute',
@@ -15,7 +15,7 @@ const style = {
   border: '2px solid #000',
   boxShadow: 24,
   p: 4,
-  height: '65%'
+ 
 };
 
 export default function BasicModal() {

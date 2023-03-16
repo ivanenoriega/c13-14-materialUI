@@ -12,7 +12,7 @@ import SelectStyle from "../src/components/Select";
 import RadioButton from "../src/components/RadioButton";
 import CheckBox from "../src/components/CheckBox";
 import BasicModal from "../src/components/Modal.jsx";
-//import BasicModal from "../src/components/Modal";
+
 
 const Home = () => {
   return (
