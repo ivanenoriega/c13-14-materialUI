@@ -1,19 +1,19 @@
-// import { ComponentStory, ComponentMeta } from "@storybook/react";
-// import React from "react";
+import { ComponentStory, ComponentMeta } from "@storybook/react";
+import React from "react";
 
-// import SelectStyle from "./Select";
+import Select from "./Select";
 
-// export default {
-//   title: "Components/SelectStyle",
-//   component: SelectStyle,
-//   argTypes: { handleChange: { action: "handleChange" } },
-// } as ComponentMeta<typeof SelectStyle>;
+export default {
+  title: "Components/Components/Select",
+  component: Select,
+  argTypes: { handleClick: { action: "handleClick" }, variant: { control: { type: 'text' } } },
+} as ComponentMeta<typeof Select>;
 
-// export const Template: ComponentStory<typeof SelectStyle> = (args) => (
-//   <SelectStyle {...args} />
-// );
-// Template.decorators = [
-//   (Story) => (
-//       <Story />
-//   ),
-// ];
+export const Basic: ComponentStory<typeof Select> = (args) => (
+  <Select {...args} />
+);
+Basic.decorators = [
+  (Story) => (
+    <Story />
+  ),
+];

@@ -1,14 +1,18 @@
 import { Button } from "@mui/material";
 import React from "react";
 
-type Props = { handleClick: () => void };
+type Props = { handleClick: () => void, variant: 'contained' | 'outlined' | 'text' };
 
-const PrimaryButton: React.FC<Props> = ({ handleClick }) => {
+const PrimaryButton: React.FC<Props> = ({ handleClick, variant }) => {
   return (
-    <Button variant="outlined" sx={{ width: 1 }} onClick={handleClick}>
+    <Button variant={variant} sx={{ width: 1 }} onClick={handleClick}>
       Texto Padre
     </Button>
   );
 };
+
+PrimaryButton.defaultProps = {
+  variant: "contained",
+}
 
 export default PrimaryButton;

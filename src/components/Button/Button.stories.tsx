@@ -4,16 +4,25 @@ import React from "react";
 import PrimaryButton from "./Button";
 
 export default {
-  title: "Components/Button",
+  title: "Components/Components/Button",
   component: PrimaryButton,
-  argTypes: { handleClick: { action: "handleClick" } , variant: {control: {type: 'text'}}},
+  argTypes: { handleClick: { action: "handleClick" }, variant: { description: 'Esto define el estilo del componente', control: { type: 'text' } } },
 } as ComponentMeta<typeof PrimaryButton>;
 
-export const Template: ComponentStory<typeof PrimaryButton> = (args) => (
+export const Basic: ComponentStory<typeof PrimaryButton> = (args) => (
   <PrimaryButton {...args} />
 );
-Template.decorators = [
+
+Basic.decorators = [
   (Story) => (
-      <Story />
+    <Story />
   ),
 ];
+
+export const VariationOutline: ComponentStory<typeof PrimaryButton> = (args) => (
+  <PrimaryButton {...args} variant="outlined" />
+);
+
+export const VariationText: ComponentStory<typeof PrimaryButton> = (args) => (
+  <PrimaryButton {...args} variant="text" />
+);
